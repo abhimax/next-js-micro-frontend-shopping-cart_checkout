@@ -4,7 +4,7 @@ const NextFederationPlugin = require('@module-federation/nextjs-mf');
 const remotes = isServer => {
   const location = isServer ? 'ssr' : 'chunks';
   return {
-    home: `home@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
+    home: `home@https://next-js-micro-frontend-shopping-cart-home-m4myx7a51.vercel.app/_next/static/${location}/remoteEntry.js`,
     shop: `shop@http://localhost:3002/_next/static/${location}/remoteEntry.js`,
   };
 };
@@ -20,7 +20,7 @@ module.exports = {
           './pages-map': './pages-map.js',
         },
         remotes: remotes(options.isServer),
-        force: true,
+        shared: {},
         extraOptions:{
           exposePages: true
         }
