@@ -20,7 +20,7 @@ module.exports = {
           './pages-map': './pages-map.js',
         },
         remotes: remotes(options.isServer),
-        shared: {},
+        force: true,
         extraOptions:{
           exposePages: true
         }
