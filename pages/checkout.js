@@ -13,7 +13,7 @@ const Checkout = props => (
     <div className="hero">
       <h1 className={classes.title}>This is come from [checkout]</h1>
       <CC />
-      <h3 className="title">This is a federated page owned by localhost:3000</h3>
+      <h3 className="title">This is a federated page</h3>
     </div>
     <style jsx>{`
       .hero {
